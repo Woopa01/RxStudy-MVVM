@@ -15,6 +15,7 @@ class NavigationShape : UINavigationController {
         navigationBar.barTintColor = Color.MAINBROWN.getColor()
         navigationBar.topItem?.title = "블라디보스토크"
         navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+        navigationBar.tintColor = .white
     }
 }
 
