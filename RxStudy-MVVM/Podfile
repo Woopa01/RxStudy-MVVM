@@ -6,6 +6,9 @@ target 'RxStudy-MVVM' do
   use_frameworks!
 	pod 'RxSwift',    '~> 4.0'
     	pod 'RxCocoa',    '~> 4.0'
+	pod 'RxAlamofire'
+   	pod 'Kingfisher', '~> 5.0'
+	pod 'RxDataSources', '~> 3.0'
 
   # Pods for RxStudy-MVVM
 

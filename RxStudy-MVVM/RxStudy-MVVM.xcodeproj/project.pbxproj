@@ -16,6 +16,9 @@
 		680B10E9226DDB1600166458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680B10E7226DDB1600166458 /* LaunchScreen.storyboard */; };
 		680B10F4226DDB1600166458 /* RxStudy_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B10F3226DDB1600166458 /* RxStudy_MVVMTests.swift */; };
 		680B10FF226DDB1600166458 /* RxStudy_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B10FE226DDB1600166458 /* RxStudy_MVVMUITests.swift */; };
+		683DCCAC22728E30006EE8FF /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683DCCAB22728E30006EE8FF /* Base.swift */; };
+		683DCCAE227292EC006EE8FF /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683DCCAD227292EC006EE8FF /* SecondVC.swift */; };
+		6868F5562271EE1800FC5076 /* historyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868F5552271EE1800FC5076 /* historyModel.swift */; };
 		68BF6D992271C9B9007C6DB0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF6D982271C9B9007C6DB0 /* Shape.swift */; };
 		68BF6D9B2271CA41007C6DB0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF6D9A2271CA41007C6DB0 /* Colors.swift */; };
 		68BF6D9D2271D08A007C6DB0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF6D9C2271D08A007C6DB0 /* MainViewModel.swift */; };
@@ -60,6 +63,9 @@
 		680B10FA226DDB1600166458 /* RxStudy-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxStudy-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680B10FE226DDB1600166458 /* RxStudy_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxStudy_MVVMUITests.swift; sourceTree = "<group>"; };
 		680B1100226DDB1600166458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683DCCAB22728E30006EE8FF /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		683DCCAD227292EC006EE8FF /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		6868F5552271EE1800FC5076 /* historyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyModel.swift; sourceTree = "<group>"; };
 		68BF6D982271C9B9007C6DB0 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		68BF6D9A2271CA41007C6DB0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		68BF6D9C2271D08A007C6DB0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				680B10DD226DDB1400166458 /* MainVC.swift */,
+				683DCCAD227292EC006EE8FF /* SecondVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 			children = (
 				68BF6D982271C9B9007C6DB0 /* Shape.swift */,
 				68BF6D9A2271CA41007C6DB0 /* Colors.swift */,
+				683DCCAB22728E30006EE8FF /* Base.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 		680B1112226E04FB00166458 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6868F5552271EE1800FC5076 /* historyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -423,14 +432,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxStudy-MVVM/Pods-RxStudy-MVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,10 +464,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6868F5562271EE1800FC5076 /* historyModel.swift in Sources */,
 				680B10DE226DDB1400166458 /* MainVC.swift in Sources */,
 				68BF6D9B2271CA41007C6DB0 /* Colors.swift in Sources */,
 				680B10E4226DDB1400166458 /* RxStudy_MVVM.xcdatamodeld in Sources */,
 				680B10DC226DDB1400166458 /* AppDelegate.swift in Sources */,
+				683DCCAE227292EC006EE8FF /* SecondVC.swift in Sources */,
+				683DCCAC22728E30006EE8FF /* Base.swift in Sources */,
 				68BF6D992271C9B9007C6DB0 /* Shape.swift in Sources */,
 				68BF6D9D2271D08A007C6DB0 /* MainViewModel.swift in Sources */,
 			);
